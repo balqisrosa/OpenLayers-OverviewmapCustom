@@ -56,4 +56,22 @@
     right: 5px;
     top: 5px;
   }
+  li {
+    position: fixed;
+    bottom: 10px;  /* Jarak dari bawah */
+    left: 10px;    /* Jarak dari kiri */
+    z-index: 1000; /* Agar elemen berada di atas elemen lain */
+    margin-top: auto;
+  }
+
+  #map {
+    width: 100%;
+    height: 400px;  /* Sesuaikan dengan ukuran peta yang diinginkan */
+    background-color: #ddd; /* Warna latar belakang untuk peta */
+  }
+
+  
+  #rotateWithView {
+    margin-top: 10px;  /* Memberikan jarak antara checkbox dan item di atasnya */
+  }
   
