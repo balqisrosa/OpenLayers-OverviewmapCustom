@@ -1,0 +1,59 @@
+.map {
+    width: 100%;
+    height: 400px;
+  }
+  
+  /* Gaya untuk OverviewMap */
+  .map .ol-custom-overviewmap,
+  .map .ol-custom-overviewmap.ol-uncollapsible {
+    position: absolute;
+    top: 10px; /* Berikan jarak dari atas */
+    right: 10px; /* Berikan jarak dari kanan */
+    bottom: auto;
+    left: auto;
+    width: 300px; /* Lebar OverviewMap */
+    height: 150px; /* Tinggi OverviewMap */
+  }
+  
+  /* Gaya ketika OverviewMap tidak collapsed */
+  .map .ol-custom-overviewmap:not(.ol-collapsed) {
+    border: 1px solid black;
+  }
+  
+  /* Gaya peta kecil di OverviewMap */
+  .map .ol-custom-overviewmap .ol-overviewmap-map {
+    border: none;
+    width: 100%; /* Sesuaikan lebar */
+    height: 100%; /* Sesuaikan tinggi */
+  }
+  
+  /* Kotak merah untuk area peta utama */
+  .map .ol-custom-overviewmap .ol-overviewmap-box {
+    border: 2px solid red;
+    box-sizing: border-box;
+  }
+  
+  /* Tombol collapse di OverviewMap */
+  .map .ol-custom-overviewmap:not(.ol-collapsed) button {
+    position: absolute;
+    right: 5px; /* Jarak tombol dari kanan */
+    top: 5px; /* Jarak tombol dari atas */
+    background-color: white; /* Tambahkan latar belakang putih untuk visibilitas */
+    border: 1px solid gray; /* Tambahkan sedikit gaya border */
+    padding: 2px 5px;
+    cursor: pointer;
+  }
+  
+  /* Tambahkan gaya saat OverviewMap collapsed */
+  .map .ol-custom-overviewmap.ol-collapsed {
+    width: 50px; /* Ukuran kecil saat collapsed */
+    height: 50px;
+    border: none;
+  }
+  
+  .map .ol-custom-overviewmap.ol-collapsed button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  
